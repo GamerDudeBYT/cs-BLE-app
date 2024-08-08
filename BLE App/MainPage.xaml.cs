@@ -25,6 +25,11 @@
         {
             DisplayAlert("Alert", "This is an alert", "I know that this is an alert");
         }
+
+        private async void ChangePage1(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("NewPage");
+        }
     }
 
 }
