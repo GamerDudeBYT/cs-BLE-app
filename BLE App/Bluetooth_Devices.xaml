@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BLE_App.Bluetooth_Devices"
+             Title="Devices">
+    <VerticalStackLayout>
+        <Button 
+        x:Name="scan_Button"
+        Clicked="scan_Button_Clicked"
+        Text="Scan Devices"/>
+        <ListView
+        x:Name="bleDevices_ListView"
+        ItemsSource="{Binding BluetoothDevices}"
+        Footer=""
+        ItemTapped="bleDevices_ListView_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell
+                    Text="{Binding Name}"
+                    Detail="PLACEHOLDER"/>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ActivityIndicator
+        x:Name="IsBusyIndicator"/>
+    </VerticalStackLayout>
+</ContentPage>

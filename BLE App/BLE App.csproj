@@ -67,15 +67,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="BluetoothPage.xaml">
+	  <MauiXaml Update="Bluetooth_Characteristics.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="InternetTest.xaml">
+	  <MauiXaml Update="Bluetooth_Devices.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="NewPage1.xaml">
+	  <MauiXaml Update="Bluetooth_Services.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Properties\" />
 	</ItemGroup>
 
 	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadUnhandledDeviceExceptionBLEAppHideInfoBar="True" /></VisualStudio></ProjectExtensions>

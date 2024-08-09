@@ -11,7 +11,7 @@
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            count+=10;
+            count+=1;
 
             if (count == 1)
                 CounterBtn.Text = $"Clicked {count} time";
@@ -24,11 +24,6 @@
         private void Alert_Test(object sender, EventArgs e)
         {
             DisplayAlert("Alert", "This is an alert", "I know that this is an alert");
-        }
-
-        private async void ChangePage1(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync("NewPage");
         }
     }
 

@@ -13,13 +13,9 @@
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
         <ShellContent
-            Title="Internet"
-            ContentTemplate="{DataTemplate local:InternetTest}"
-            Route="InternetTest" />
-        <ShellContent
             Title="Bluetooth"
-            ContentTemplate="{DataTemplate local:BluetoothPage}"
-            Route="BluetoothPage" />
+            ContentTemplate="{DataTemplate local:Bluetooth_Devices}"
+            Route="Bluetooth_Devices" />
     </TabBar>
     
 </Shell>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BLE_App.Bluetooth_Services"
+             Title="Services">
+    <VerticalStackLayout>
+        <Label 
+            Text="Bluetooth"
+            TextColor="Blue"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1"/>
+        <!-- Display selected BLE Device -->
+        <Label
+            Text="Selected BLE Device: "
+            x:Name="bleDevice_Label"/>
+        <Label
+            Text="Services"/>
+        <!-- The list below shows the services available on the selected BLE device -->
+        <ListView
+            x:Name="foundBLEServices_ListView"
+            ItemTapped="foundBLEServices_ListView_ItemTapped"/>
+    </VerticalStackLayout>
+</ContentPage>

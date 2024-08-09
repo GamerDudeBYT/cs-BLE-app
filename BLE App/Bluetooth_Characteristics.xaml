@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BLE_App.Bluetooth_Characteristics"
+             Title="Characteristics">
+    <VerticalStackLayout>
+        <Label
+            Text="Selected BLE Device"
+            x:Name="bleDevice_Label"/>
+        <Label
+            Text="Selected BLE Service"
+            x:Name="bleService_Label"/>
+        <Label
+            Text="Characteristics"/>
+        <ListView
+            x:Name="foundBleChars_ListView"
+            ItemTapped="foundBleChars_ListView_ItemTapped"/>
+        <Label
+            Text="No Characteristic Selected"
+            x:Name="bleChar_Label"/>
+        <ScrollView>
+            <Label
+                x:Name="Output"
+                TextColor="DarkBlue"
+                VerticalOptions="EndAndExpand"/>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>
