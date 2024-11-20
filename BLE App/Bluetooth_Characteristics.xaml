@@ -24,5 +24,19 @@
                 TextColor="DarkBlue"
                 VerticalOptions="EndAndExpand"/>
         </ScrollView>
+        <Label
+            x:Name="charData_Label"
+            Text=""/>
+        <Entry
+            x:Name="command_Entry"
+            Text="Command Here" />
+        <!-- Buttons to send/receive/register to Characteristics -->
+        <VerticalStackLayout Margin="0,0,0,0">
+            <HorizontalStackLayout x:Name="buttonStack_HorizontalStackLayout">
+                <Button Text="Read" Clicked="recieveCommandButton_Button_Clicked"/>
+                <Button Text="Write" Clicked="sendCommandButton_Button_Clicked"/>
+                <Button Text="Notify" Clicked="registerCommandButton_Button_Clicked"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
